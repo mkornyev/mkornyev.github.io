@@ -1,0 +1,208 @@
+/* Selectors: "p" or "#id name" or ".class" */
+
+body {
+	font-family: "Verdana", Geneva, sans-serif;
+	font-size: 100%;
+
+	/* 1em = 16px/full elem size by defalt */
+	
+	line-height: 1.7em;
+	color: #000000;
+}
+
+/* 
+---- Color Scheme ----
+
+Burgundy: 800020
+Oxford Blue: 002642
+Harvest Gold: E59500
+Gainsboro: E5DADA
+Rich Black: 02040F 
+*/
+
+#container {
+	width: 70%;
+	margin: 10px auto;
+	border: 1px solid gray;
+}
+
+#top_row header {
+	color: #800020;
+	font-size: 1.65em;
+	line-height: 1.65em;
+}
+
+/* Class of 2021 */
+#top_row h2 { 
+	font-family: "Geneva", Verdana, sans-serif; 
+	font-size: .8em;
+	font-weight: 1;
+	letter-spacing: -1px;
+}
+
+/* About/Proj/Contact */
+#top_row nav {
+	float: right;
+}
+
+/* Links */
+#top_row nav a {
+	text-decoration: none; 
+	font-size: 1.125em;
+	font-weight: 400;
+	padding: 15px; 
+	color: #000000; 
+}
+
+/* Selected page */ 
+#top_row nav a.selected {
+	background: #E5DADA;
+	color: #E59500;
+}
+
+/* Current pg hover */
+#top_row nav a.selected:hover {
+	background: #E5DADA;
+	color: #E59500;
+}
+
+/* Typical hover */
+#top_row nav a:hover {
+	background: #E5DADA;
+	color: #E59500;
+}
+
+/* Main content pane */
+#content {
+	float: left;
+	width: 70%;
+	margin: 0;
+	padding: 1em; 
+	border-top: 1px dotted #ccc; 
+	border-right: 1px dotted #ccc; 
+}
+
+/* About header */
+#content h3 {
+	font-family: Geneva, sans-serif; 
+	font-size: 1.5em; 
+	margin: 30px 0 10px 0; 
+	font-weight: normal;
+}
+
+/* "Find me" address section */ 
+#sidebar {
+	float: left; 
+	padding: 1em;
+	font-size: .875em; 
+	border-top: 1px dotted #ccc; 
+}
+
+/* "Find me" */ 
+#sidebar h3 {
+	font-size: 1.125em; 
+	border-bottom: 1px dotted #ccc; 
+}
+
+/* CMU Link */ 
+#sidebar a {
+	text-decoration: none;
+}
+
+/* CMU Link Hover */ 
+#sidebar a:hover {
+	text-decoration: underline;
+}
+
+footer {
+	clear: both; /* Avoid floating elements on BOTH sides */
+	margin: 0;
+	padding: .25em; 
+	color: #333333;
+	font-variant: small-caps; 
+	font-size: .813em; 
+	text-align: center;
+	background-color: #ddd; /* Looks good so is included */
+}
+
+#content img {
+	float: left;
+	margin: 1em; 
+}
+
+/* Bio, coursework, resume */ 
+#bio {
+	margin-left: 3em; 
+	font-size: .875em; 
+}
+
+/* Resume link */
+#bio a {
+	text-decoration: none;
+	border-bottom: 1px dotted #000;
+	color: #000; 
+}
+
+/* Resume link effects */
+#bio a:hover {
+	color: #E59500
+}
+
+/* Table */
+table {
+	width: 75%;
+	border: 1px solid #333333;
+	color: #002642;
+	padding: 2px;
+	margin: 2em; /* Center allign */ 
+	border-collapse: collapse; 
+	text-align: center;
+}
+
+th {
+	height: 40px;
+	font: bold;
+	font-size: .95em;
+}
+
+/* Contact Form */
+form {
+	width: 75%;
+	margin-left: 4.25em; 
+	border: 1px solid #E59500;
+	padding: 10px;
+}
+
+/* Form Legend */
+legend {
+	font-weight: bold;
+	font-size: .9em;
+	text-align: center;
+}
+
+html {
+	/* Clips the top/bottom of content */
+	overflow-y: scroll;
+}
+
+#accordion h4 {
+	background: none;
+	background-color: #E5DADA;
+	font-family: "Geneva";
+}
+
+/* Google map embed */
+iframe {
+	display: black;
+	margin: auto;
+	margin-left: 2.75em; 
+	outline: 2px dotted #E59500;
+}
+
+/* Making Responsive Images */
+.responsive {
+	max-width: 100%;
+	height: auto; 
+}
+
+

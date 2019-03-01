@@ -1,0 +1,54 @@
+@media screen and (max-width: 480px) {
+
+	body {
+		font-size: 100%;
+		background-color: #faf7f3;
+	}
+
+	#top_row h1{
+		color: #2a1d1c;
+		font-size: 2em;
+	}
+	#top_row h3{
+		font-size: 1em;
+	}
+	#top_row nav{
+		display: none;
+	}
+
+	#content {
+		float: left;
+		width: 100%;
+		margin: 0;
+		padding: 1em; 
+		border-right: none; 
+	}
+	#content h3 {
+		font-size: 1.25em; 
+		margin: 0; 
+	}
+	#content img {
+		display: none; /* Remove image in smaller screens*/
+	}
+
+	#bio {
+		font-size: .875em; 
+		margin-left: 0em; 
+	}
+	#bio a {
+		border-bottom: none;
+	}
+
+	#sidebar {
+		float: left;
+		padding: 0em;
+		font-size: .875em;
+		border: none;
+	}
+	#sidebar h3 {
+		margin: 0;
+		font-size: 1.25em;
+		border: none;
+	}
+
+}
