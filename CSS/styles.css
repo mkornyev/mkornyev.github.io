@@ -1,3 +1,23 @@
+/* 
+
+    ---- STYLES.CSS ----
+
+Find Bootstrap Customizations at the top
+Find base styles below that 
+Find deprecated styles at the bottom
+
+    ---- Color Scheme ----
+
+Burgundy: 800020
+Oxford Blue: 002642
+Harvest Gold: E59500
+Gainsboro: E5DADA
+Rich Black: 02040F 
+*/
+
+
+
+
 /* Selectors: "p" or "#id name" or ".class" */
 
 body {
@@ -9,16 +29,6 @@ body {
 	line-height: 1.7em;
 	color: #000000;
 }
-
-/* 
----- Color Scheme ----
-
-Burgundy: 800020
-Oxford Blue: 002642
-Harvest Gold: E59500
-Gainsboro: E5DADA
-Rich Black: 02040F 
-*/
 
 #container {
 	width: 70%;
