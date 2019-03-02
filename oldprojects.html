@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+<head>
+	<!-- JS Links -->
+	<script type="text/javascript" src="JS/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="JS/scripts.js"></script>
+	<script type="text/javascript" src="JS/jquery-ui.js"></script>
+	<script type="text/javascript" src="JS/jquery.lightbox.min.js"></script>
+	<!-- CSS -->
+	
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- Accordion Feature 
+	<script>
+	  $('#mainAccordion.collapse').collapse()
+	</script> 
+	
+	<script>
+	  $(function() {
+	  	$("#tabs").tabs({event: "mouseover"});
+      });
+	</script>
+	
+	<script type="text/javaScript">
+	  $(function() {
+	  	$("#gallery a").lightBox();
+      });
+	</script> -->
+
+	<!-- Metadata for the website -->
+	<meta charset="utf-8" />
+	<meta name="author" content=" Maksym Kornyev">
+	<meta name="keywords" content=" Carnegie Mellon University, Information Systems, Resume">
+	<meta name="description" content="Official Website of Maksym Kornyev">
+</head>
+
+
+<body id="projects_body">
+	
+	<!-- TOP_NAVBAR -->
+	<div class="row justify-content-md-center">
+		<div class="col-lg-10 px-5">
+		<header>
+			<!-- Introductory Data --> 
+			<h1>Maksym Kornyev</h1>
+			<a class="nav-link active" href="https://www.linkedin.com/in/mkornyev">( Under bootstrap reconstruction, click here for more )</a>
+
+			<!-- NavBar --> 
+			<nav class="navbar navbar-dark bg-dark">
+			  <!-- Horizontal allignment --> 
+			  <ul class="nav justify-content-center">
+			  	  <li class="nav-item">
+				    <a class="nav-link active" href="index.html">About</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="projects.html">Projects</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="contact.html">Contact</a>
+				  </li>
+			  </ul>
+			  <form class="form-inline">
+			  	<input class="form-control mr-sm-2 float-left" type="search" placeholder="Search" aria-label="Search">
+			  	<button type="button" class="btn btn-outline-warning">Search</button>
+			  </form>
+			</nav>
+
+			<!-- Rest of heading --> 
+			<h4 class="py-3 border-bottom">Carnegie Mellon University | <small>Information Systems</small> | <small>Class of 2021</small></h4>
+		</header>
+		</div>
+	</div>
+
+	<div class="container">
+	<div class="row">
+	<div class=".col-8 px-4">
+		<h3>Projects</h3>
+	</div>
+	<div class=".col-8 px-4">
+		<p class="lead">Click each heading for a short project description.</p>
+
+		<!------- Projects accordion ------->
+		<div class="accordion" id="accordionExample">
+		  <div class="card">
+		    <div class="card-header" id="headingOne">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+		          Collapsible Group Item #1
+		        </button>
+		      </h2>
+		    </div>
+
+		    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+		      <div class="card-body">
+		        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+		      </div>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <div class="card-header" id="headingTwo">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+		          Collapsible Group Item #2
+		        </button>
+		      </h2>
+		    </div>
+		    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+		      <div class="card-body">
+		        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+		      </div>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <div class="card-header" id="headingThree">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+		          Collapsible Group Item #3
+		        </button>
+		      </h2>
+		    </div>
+		    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+		      <div class="card-body">
+		        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- Accordion End --> 
+
+		<!-- Gallery 
+		<p>Clink the thumbnails to see full images and descriptions</p>
+		<div id="content-gallery">
+			<div id="galleryThumbnail"><div id="thmbnlShadow">
+			<a href="my_images/image1.jpg" title="Case analysis proj">
+			<img src="my_images/image1thumb.jpg" alt="Image 1"/></a></div></div>
+
+			<div id="galleryThumbnail"><div id="thmbnlShadow">
+			<a href="my_images/image2.jpg" title="Web dev proj">
+			<img src="my_images/image2thumb.jpg" alt="Image 2"/></a></div></div>
+
+			<div id="galleryThumbnail"><div id="thmbnlShadow">
+			<a href="my_images/image3.jpg" title="Database proj">
+			<img src="my_images/image3thumb.jpg" alt="Image 3"/></a></div></div>
+		</div> -->
+
+		</div> <!-- Col end -->
+
+		<!---------------->
+
+		<!-- Projects Tabs 
+			<div id="tabs">
+				<ul>
+					<li><a href="#tabs-1">Case Analysis</a></li>
+					<li><a href="#tabs-2">Web Development</a></li>
+					<li><a href="#tabs-3">Databse Project</a></li>
+				</ul>
+				<div id="tabs-1"><p>
+			   	Tu quoque
+			  	</p></div>
+			  	<div id="tabs-2"><p>
+			   	Ad hominem
+			  	</p></div>
+			  	<div id="tabs-3"><p>
+			   	Red herring
+			  	</p></div>
+			</div>
+		-->
+	<div id=".col-4">
+		<h3>Find me</h3>
+		Max Kornyev <br/>
+		<a href="https://www.cmu.edu/information-systems/">Carnegie Mellon University</a><br/>
+		101 North Dithridge St<br/>
+		Pittsburgh, PA 15213<br/>
+		315.296.5003<br/>
+		<a href="mailto:mkornyev@andrew.cmu.edu"><img src="my_images/email.png" width="32px"></a>
+		<a href="https://www.linkedin.com/in/mkornyev"><img src="my_images/linkedIn.png" width="32px"></a>
+		<a href="https://www.facebook.com/max.kornyev"><img src="my_images/facebook.png" width="32px"></a>
+		<a href="https://github.com/mkornyev"><img src="my_images/github.png" width="32px"></a>
+	</div>
+	</div>
+
+	<div class="row">
+	<div class=".col-md-8 offset-md-9 text-right border-0">
+		<hr/>
+		&copy; Maksym Kornyev 2019<br/>
+		<a class="pl-3" href="mailto:mkornyev@andrew.cmu.edu">Email</a> |
+		<a href="http://cmu.edu" target="_blank">Carnegie Mellon University</a>
+	</div>
+	</div>
+</div>
+
+</body>
+
+
+</html>

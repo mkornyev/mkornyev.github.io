@@ -3,43 +3,27 @@
 <html lang="en"> 
 
 <head>
-	<!-- JS Links -->
-	<script type="text/javascript" src="JS/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="JS/scripts.js"></script>
-	<script type="text/javascript" src="JS/jquery-ui.js"></script>
-	<script type="text/javascript" src="JS/jquery.lightbox.min.js"></script>
-	<!-- CSS -->
-	<link rel="stylesheet" media="all" type="text/css" href="CSS/indexstyles.css" />
-	<!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-	<!-- Accordion Feature -->
-	<script>
-	  $(function() {
-	  	$("#accordion").accordion();
-      });
-	</script>
-	<!-- Tabs feature -->
-	<script>
-	  $(function() {
-	  	$("#tabs").tabs({event: "mouseover"});
-      });
-	</script>
-	<!-- Gallery feature -->
-	<script type="text/javaScript">
-	  $(function() {
-	  	$("#gallery a").lightBox();
-      });
-	</script>
 	<!-- Metadata for the website -->
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="author" content=" Maksym Kornyev">
 	<meta name="keywords" content=" Carnegie Mellon University, Information Systems, Resume">
 	<meta name="description" content="Official Website of Maksym Kornyev">
+
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" media="all" type="text/css" href="CSS/indexstyles.css" />
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 
 
-<body id="projects_body">
+
+<body id="index_body">
 	
 	<!-- TOP_NAVBAR -->
 	<div class="row justify-content-md-center">
@@ -54,13 +38,13 @@
 			  <!-- Horizontal allignment --> 
 			  <ul class="nav justify-content-center">
 			  	  <li class="nav-item">
-				    <a class="nav-link active" href="index.html">About</a>
+				    <a class="nav-link active underline_effect_1 pl-4" href="index.html">About</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link" href="projects.html">Projects</a>
+				    <a class="nav-link underline_effect_2" href="projects.html">Projects</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link" href="contact.html">Contact</a>
+				    <a class="nav-link underline_effect_3" href="contact.html">Contact</a>
 				  </li>
 			  </ul>
 			  <form class="form-inline">
@@ -77,23 +61,33 @@
 
 	<div class="container">
 	<div class="row">
-	<div class=".col-8 px-4">
+
+	<div id=".col">
 		<h3>Projects</h3>
-		<p class="lead">Click each heading for a short project description.</p>
-		<!------- Projects accordion ------->
+		<p class="lead">Click the headings to see a short project description</p>
+		<!-- Accordion --> 
 		<div class="accordion" id="accordionExample">
 		  <div class="card">
 		    <div class="card-header" id="headingOne">
 		      <h2 class="mb-0">
 		        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-		          Collapsible Group Item #1
+		          Applicaion Design and Development (In Progress) 
 		        </button>
 		      </h2>
 		    </div>
 
 		    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
 		      <div class="card-body">
-		        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+		      	<p class="lead pl-4 pt-2">Skills Learned:</p>
+		        <ul>
+		        	<li>MVC</li>
+		        	<li>RESTful Architecture</li>
+		        	<li>Test Coverage Tools (simpleCov)</li>
+		        	<li>Unit Testing Tools (factoryBot, cucumberRails)</li>
+		        	<li>Custom Validations</li>
+		        	<li>Additional Experience with CSS Frameworks (Bootstrap, Materialize)</li>
+		        </ul>
+		        My first iterative exposure to Agile Development with Rails. This was some of the most challenging and creative front-end work I've ever done, and taught me the importance of being truly exhaustive in project documentation and unit testing. 
 		      </div>
 		    </div>
 		  </div>
@@ -101,13 +95,13 @@
 		    <div class="card-header" id="headingTwo">
 		      <h2 class="mb-0">
 		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-		          Collapsible Group Item #2
+		          World Leaders Database Project (In Progress)
 		        </button>
 		      </h2>
 		    </div>
 		    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
 		      <div class="card-body">
-		        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+		        --------------------------------------------------------------------- In progress. ---------------------------------------------------------------------
 		      </div>
 		    </div>
 		  </div>
@@ -115,108 +109,86 @@
 		    <div class="card-header" id="headingThree">
 		      <h2 class="mb-0">
 		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-		          Collapsible Group Item #3
+		          HTML A Day Challenge<a href="https://github.com/mkornyev/HTML-A-Day-Challenge" class="btn btn-primary btn-sm active ml-4 btn-outline-warning" role="button" aria-disabled="true">Source</a>
 		        </button>
 		      </h2>
 		    </div>
 		    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
 		      <div class="card-body">
-		        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+		        <p class="lead pl-4 pt-2">Daily Feature Log:</p>
+		      	<ul>
+		        	<li>2/19 - Included an About homepage, Projects tab, and Contact tab</li>
+		        	<li>2/20 - Basic footers, tables, and a form added to the site</li>
+		        	<li>2/21 - Body, header, and form styling added in CSS</li>
+		        	<li>2/22 - Mouseover, accordion, and tab effects added with JS and JQuery. Google maps location added.</li>
+		        	<li>2/23 - Jquery validations, Lightbox libraries, and Highchart tools implemented</li>
+		        	<li>2/24 - Media rules added, with correct index reformatting for 480px screens</li>
+		        	<li>2/24 - (again) Homepage simple-fitted with Bootstrap framework. New Navbar and effects added. </li>
+		        </ul>
+		        My best attempt to learn HTML in a week. Over the coures of a couple hours each day, I built a prototype of my personal website, tying together site forms, graphs, and embedded content with all-custom Stylesheets and JS functions.  
+		      </div>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <div class="card-header" id="headingThree">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+		          PostgreSQL Transaction Store
+		        </button>
+		      </h2>
+		    </div>
+		    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+		      <div class="card-body">
+		      	<p class="lead pl-4 pt-2">Skills Learned:</p>
+		        <ul>
+		        	<li>Postgres Scripting</li>
+		        	<li>Psycopg2</li>
+		        	<li>BCNF</li>
+		        	<li>UML</li>
+		        </ul>
+		        Built a followed the basic database normalization process, from building a data dictionary to drafting a final ERD, and built a resilient data-store in Postgres. 
+		        Learning to script and motivate the database with Python was invaluable Development experience, and taught me to operate in a framework-less environment. 
 		      </div>
 		    </div>
 		  </div>
 		</div>
-		<!-- Accordion End --> 
+		<!-- End accordion -->
+		
+	</div>
+	</div>
 
-		<!-- Gallery -->
-		<p>Clink the thumbnails to see full images and descriptions</p>
-		<div id="content-gallery">
-			<div id="galleryThumbnail"><div id="thmbnlShadow">
-			<a href="my_images/image1.jpg" title="Case analysis proj">
-			<img src="my_images/image1thumb.jpg" alt="Image 1"/></a></div></div>
-
-			<div id="galleryThumbnail"><div id="thmbnlShadow">
-			<a href="my_images/image2.jpg" title="Web dev proj">
-			<img src="my_images/image2thumb.jpg" alt="Image 2"/></a></div></div>
-
-			<div id="galleryThumbnail"><div id="thmbnlShadow">
-			<a href="my_images/image3.jpg" title="Database proj">
-			<img src="my_images/image3thumb.jpg" alt="Image 3"/></a></div></div>
-		</div>
-
-		<!-- Projects table -->
-		<table style="width:90%" border="4px">
-		  <th colspan="3">Course Projects</th>
-		  <tr>
-		    <th>Title</th>
-		    <th>Course</th> 
-		    <th>Semester</th>
-		  </tr>
-		  <tr onmouseover="showDescription('Analyzed the profitability of Alibaba, and their status in the B2B and B2C ecommerce sectors. Described the feasibility of a breakthrough into the growing United States B2B market');" onmouseout="hideDescription();">
-		    <td>Case Analysis</td>
-		    <td>67-250</td> 
-		    <td>Spring 2019</td>
-		  </tr>
-		  <tr onmouseover="showDescription('Built the website you are currently using');" onmouseout="hideDescription();">
-		    <td>Web Development Project</td>
-		    <td>67-250</td> 
-		    <td>Spring 2019</td>
-		  </tr>
-		  <tr onmouseover="showDescription('Not completed yet!');" onmouseout="hideDescription();">
-		    <td>Databse Project</td>
-		    <td>67-250</td> 
-		    <td>Spring 2019</td>
-		  </tr>
-		</table>
-
-		<div id="description"></div>
-
-		</div> <!-- Col end -->
-
-		<!---------------->
-
-		<!-- Projects Tabs 
-			<div id="tabs">
-				<ul>
-					<li><a href="#tabs-1">Case Analysis</a></li>
-					<li><a href="#tabs-2">Web Development</a></li>
-					<li><a href="#tabs-3">Databse Project</a></li>
-				</ul>
-				<div id="tabs-1"><p>
-			   	Tu quoque
-			  	</p></div>
-			  	<div id="tabs-2"><p>
-			   	Ad hominem
-			  	</p></div>
-			  	<div id="tabs-3"><p>
-			   	Red herring
-			  	</p></div>
-			</div>
-		-->
-	<div id=".col-4">
+	<div class="row">
+	<div class=".col pl-5 pt-3">
 		<h3>Find me</h3>
 		Max Kornyev <br/>
 		<a href="https://www.cmu.edu/information-systems/">Carnegie Mellon University</a><br/>
 		101 North Dithridge St<br/>
 		Pittsburgh, PA 15213<br/>
-		315.296.5003<br/>
+		315.296.5003 (C)<br/>
+		<br/>
+	
+	<div class="border-top">
+		<h3 class="pt-3">Links</h3>
+		<!--<div>Icons made by <a href="https://www.flaticon.com/authors/pixel-buddha" title="Pixel Buddha">Pixel Buddha</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a>-->
+
 		<a href="mailto:mkornyev@andrew.cmu.edu"><img src="my_images/email.png" width="32px"></a>
 		<a href="https://www.linkedin.com/in/mkornyev"><img src="my_images/linkedIn.png" width="32px"></a>
 		<a href="https://www.facebook.com/max.kornyev"><img src="my_images/facebook.png" width="32px"></a>
 		<a href="https://github.com/mkornyev"><img src="my_images/github.png" width="32px"></a>
 	</div>
 	</div>
+	</div>
 
-	<div class="row justify-content-md-center">
-	<div class=".col col-custom">
+	<div class="row">
+	<div class=".col-md-8 offset-md-9 text-right border-0">
 		<hr/>
 		&copy; Maksym Kornyev 2019<br/>
 		<a class="pl-3" href="mailto:mkornyev@andrew.cmu.edu">Email</a> |
 		<a href="http://cmu.edu" target="_blank">Carnegie Mellon University</a>
 	</div>
 	</div>
-</div>
 
+	</div>
 </body>
 
 
