@@ -2,9 +2,14 @@
 	color: #ffc107 !important;
 }
 
+.btn-primary:hover {
+    background-color: red !important;
+}
 
 
-/*effect-underline*/
+
+                /* Underline Effect */
+/* ################################################ */
 a.underline_effect_1:after {
 	content: '';
   position: absolute;
@@ -73,7 +78,4 @@ a.underline_effect_3:hover:after {
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
-
-.btn-primary:hover {
-    background-color: red !important;
-}
+/* ################################################ */
