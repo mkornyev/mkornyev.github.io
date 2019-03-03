@@ -30,15 +30,25 @@
 		<div class="col-lg-10 px-5">
 		<header>
 			<!-- Introductory Data --> 
-			<img src="my_images/MK.png" class="pb-4 img-fluid img_header text-center" width="50px" alt="Responsive image">
-			<h1 class="name_header pt-4">Maksym Kornyev</h1>
+			<!-- FLIPPED LOGO -->
+			<div class="flip-container img_header pt-3" ontouchstart="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front">
+						<img src="my_images/MK.png" class="pb-4 img-fluid img_header text-center" width="60px" alt="Responsive image">
+					</div>
+					<div class="back">
+						<img src="my_images/MK.png" class="img-fluid img_header text-center" width="60px" alt="Responsive image">
+					</div>
+				</div>
+			</div>
+			<h1 class="name_header">Maksym Kornyev</h1>
 
 			<!-- NavBar --> 
 			<nav class="navbar navbar-dark bg-dark">
 			  <!-- Horizontal allignment --> 
 			  <ul class="nav justify-content-center">
 			  	  <li class="nav-item">
-				    <a class="nav-link active underline_effect_1 pl-4" href="index.html">About</a>
+				    <a class="nav-link active underline_effect_1 pl-4" href="index.html" >About</a>
 				  </li>
 				  <li class="nav-item">
 				    <a class="nav-link underline_effect_2" href="projects.html">Projects</a>

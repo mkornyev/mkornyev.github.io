@@ -30,8 +30,18 @@
 		<div class="col-lg-10 px-5">
 		<header>
 			<!-- Introductory Data --> 
-			<img src="my_images/MK.png" class="pb-4 img-fluid img_header text-center" width="50px" alt="Responsive image">
-			<h1 class="name_header pt-4">Maksym Kornyev</h1>
+			<!-- FLIPPED LOGO -->
+			<div class="flip-container img_header pt-3" ontouchstart="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front">
+						<img src="my_images/MK.png" class="pb-4 img-fluid img_header text-center" width="60px" alt="Responsive image">
+					</div>
+					<div class="back">
+						<img src="my_images/MK.png" class="img-fluid img_header text-center" width="60px" alt="Responsive image">
+					</div>
+				</div>
+			</div>
+			<h1 class="name_header">Maksym Kornyev</h1>
 			<a class="nav-link active" href="https://www.linkedin.com/in/mkornyev">( Under bootstrap reconstruction, click here for more )</a>
 
 			<!-- NavBar --> 
@@ -49,7 +59,7 @@
 				  </li>
 			  </ul>
 			  <form class="form-inline">
-			  	<input class="form-control mr-sm-2 float-left" type="search" placeholder="Search" aria-label="Search">
+			  	<input class="form-control mr-sm-2 float-left" method="get" action="/search" name="q" type="search" placeholder="Search" aria-label="Search">
 			  	<button type="button" class="btn btn-outline-warning">Search</button>
 			  </form>
 			</nav>
