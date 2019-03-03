@@ -2,6 +2,10 @@
 	color: #ffc107 !important;
 }
 
+.reg-link {
+  color: #000000 !important;
+}
+
 .btn-custom:hover {
     background-color: #007bff !important;
     border-color: #007bff !important;
@@ -14,6 +18,7 @@
 .img_header {
   display: inline-block;
 }
+
 
     /* Flipping effect. Credit: DavidWalsh.name */
 /* ################################################ */
