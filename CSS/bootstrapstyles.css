@@ -2,8 +2,17 @@
 	color: #ffc107 !important;
 }
 
-.btn-primary:hover {
-    background-color: red !important;
+.btn-custom:hover {
+    background-color: #007bff !important;
+    border-color: #007bff !important;
+}
+
+.name_header {
+  display: inline-block; 
+}
+
+.img_header {
+  display: inline-block;
 }
 
 
