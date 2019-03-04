@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" media="all" type="text/css" href="CSS/bootstrapstyles.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="CSS/stylesmobile.css" />
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -58,8 +59,8 @@
 				  </li>
 			  </ul>
 			  <form class="form-inline">
-			  	<input class="form-control mr-sm-2 float-left" type="search" placeholder="Search" aria-label="Search">
-			  	<button type="button" class="btn btn-outline-warning">Search</button>
+			  	<input class="form-control mr-sm-2 float-left search_bar" type="search" placeholder="Search" aria-label="Search">
+			  	<button type="button" class="btn btn-outline-warning search_bar">Search</button>
 			  </form>
 			</nav>
 
@@ -72,7 +73,7 @@
 	<div class="container">
 	<div class="row">
 
-	<div class=".col-8 px-5 py-3 mr-5">
+	<div class=".col-8 px-5 py-3 mr-5 footer">
 		<h3 class="pb-2">Projects</h3>
 		<p class="lead">Click the headings below 
 		to see some short project
@@ -80,7 +81,8 @@
 		<p>I include a list of relevant skills I learned, as well as a project bio.</p>
 	</div>
 	
-	<div class=".col-2 pt-3 pl-3 text-right">
+	<div class=".col-2 pt-3 pl-3 text-right project_footer">
+	<div class="project_footer">
 		<h3 class="text-center">Links</h3><br>
 		<!--<div>Icons made by <a href="https://www.flaticon.com/authors/pixel-buddha" title="Pixel Buddha">Pixel Buddha</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a>-->
 
@@ -89,8 +91,10 @@
 		<a class="pt-3" href="https://www.facebook.com/max.kornyev"><img src="my_images/facebook.png" width="32px"></a>
 		<a class="pt-3" href="https://github.com/mkornyev"><img src="my_images/github.png" width="32px"></a>
 	</div>
+	</div>
 
 	<div class=".col-2 pt-3 px-3 text-right">
+	<div class="project_footer">
 		<h3>Find me</h3>
 		Max Kornyev <br/>
 		<a href="https://www.cmu.edu/information-systems/">Carnegie Mellon University</a><br/>
@@ -98,6 +102,7 @@
 		Pittsburgh, PA 15213<br/>
 		315.296.5003 (C)<br/>
 		<br/>
+	</div>
 	</div>
 
 	</div> <!-- Row End -->
@@ -223,8 +228,8 @@
 	</div> <!-- Col End --> 
 	</div> <!-- Row1 End --> 
 
-	<div class="row">
-	<div class=".col-md-8 offset-md-9 text-right border-0">
+	<div class="row justify-content-md-center">
+	<div class=".col-md-8 text-center border-0 footer">
 		<hr/>
 		&copy; Maksym Kornyev 2019<br/>
 		<a class="pl-3" href="mailto:mkornyev@andrew.cmu.edu">Email</a> |

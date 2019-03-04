@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" media="all" type="text/css" href="CSS/bootstrapstyles.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="CSS/stylesmobile.css" />
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -58,8 +59,8 @@
 				  </li>
 			  </ul>
 			  <form class="form-inline">
-			  	<input class="form-control mr-sm-2 float-left" method="get" action="/search" name="q" type="search" placeholder="Search" aria-label="Search">
-			  	<button type="button" class="btn btn-outline-warning">Search</button>
+			  	<input class="form-control mr-sm-2 float-left search_bar" method="get" action="/search" name="q" type="search" placeholder="Search" aria-label="Search">
+			  	<button type="button" class="btn search_bar btn-outline-warning">Search</button>
 			  </form>
 			</nav>
 
@@ -70,7 +71,7 @@
 	</div>
 
 	<div class="container">
-	<div class="row">
+	<div class="row justify-content-md-center">
 	<div class=".col p-3"> 
 		<figure class="figure">
 		  <img src="my_images/Headshot.JPG" class="figure-img img-fluid rounded" width='250px' alt="Photo">
@@ -79,7 +80,11 @@
 	</div>
 
 	<div id=".col">
-		<p><a class="nav-link active reg-link" href="https://www.linkedin.com/in/mkornyev">This website is under bootstrap reconstruction, sorry for the impaired usability!</a></p>
+		<fieldset class="border mx-2 pl-3 mb-3 mt-3">
+			<legend>Announcement</legend>
+			<p><a class="nav-link active reg-link" href="https://www.linkedin.com/in/mkornyev">This website is under bootstrap reconstruction, sorry for the inconvenience!</a></p>
+		</fieldset>
+
 		<fieldset class="border mx-4 pl-3 mb-3 mt-3">
 			<legend  class="w-auto">Tag</legend>
    			<ul style="list-style: none;" class="pr-3">
@@ -110,7 +115,7 @@
 		
 	</div>
 
-	<div class=".col pl-5">
+	<div class=".col footer pl-5">
 		<h3>Find me</h3>
 		Max Kornyev <br/>
 		<a href="https://www.cmu.edu/information-systems/">Carnegie Mellon University</a><br/>
@@ -132,8 +137,8 @@
 
 	</div>
 
-	<div class="row">
-	<div class=".col-md-8 offset-md-5 text-center border-0">
+	<div class="row justify-content-md-center footer">
+	<div class=".col-md-8 text-center border-0">
 		<hr/>
 		&copy; Maksym Kornyev 2019<br/>
 		<a class="pl-3" href="mailto:mkornyev@andrew.cmu.edu">Email</a> |

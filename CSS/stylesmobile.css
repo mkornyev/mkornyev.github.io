@@ -5,15 +5,17 @@
 		background-color: #faf7f3;
 	}
 
-	#top_row h1{
-		color: #2a1d1c;
-		font-size: 2em;
+	.footer {
+		text-align: center;
+		margin-left: 30px;
 	}
-	#top_row h3{
-		font-size: 1em;
-	}
-	#top_row nav{
+
+	.search_bar {
 		display: none;
+	}
+
+	.figure-img {
+		margin-left: 30px;
 	}
 
 	#content {
@@ -39,16 +41,10 @@
 		border-bottom: none;
 	}
 
-	#sidebar {
-		float: left;
-		padding: 0em;
-		font-size: .875em;
-		border: none;
-	}
-	#sidebar h3 {
-		margin: 0;
-		font-size: 1.25em;
-		border: none;
-	}
+}
 
+@media screen and (max-width: 1193px) {
+	.project_footer {
+		display: none;
+	}
 }
