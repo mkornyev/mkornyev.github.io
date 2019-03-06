@@ -19,6 +19,36 @@
   display: inline-block;
 }
 
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.footer {
+   font-size: .85em;
+}
+
+/*             Sounter Section Style                */
+/* ################################################ */
+
+.main_counter_area{
+    background: url(https://images.pexels.com/photos/196288/pexels-photo-196288.jpeg?w=940&h=650&auto=compress&cs=tinysrgb) no-repeat top center;
+    background-size: cover;
+    overflow: hidden;
+}
+.main_counter_area .main_counter_content .single_counter{
+    background: rgba(236, 72, 72, 0.5);
+        color: #000000;
+}
+.main_counter_area .main_counter_content .single_counter i{
+    font-size:36px;
+}
 
     /* Flipping effect. Credit: DavidWalsh.name */
 /* ################################################ */

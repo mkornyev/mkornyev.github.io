@@ -1,4 +1,9 @@
 
+
+/* 
+
+Deprecated: Here for later development 
+
 //Projects descriptions
 function showDescription(descript){
 	$("#description").html("Description: " + descript);
@@ -23,3 +28,5 @@ function validate(){
 		return false;
 	}
 }
+
+*/
