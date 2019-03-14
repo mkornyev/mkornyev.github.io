@@ -120,11 +120,12 @@
 
 	</div> <!-- Row End -->
 
+	<!-- 
 	<div class="row">
-	<div class=".col">
+	<div class=".col" id="accordionCol"> -->
 		<!-- Accordion --> 
 		<div class="accordion" id="accordionExample">
-		  <div class="card">
+		  <div class="card" id="card1">
 		    <div class="card-header" id="headingOne">
 		      <h2 class="mb-0">
 		        <button class="btn btn-link mx-5 px-5" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -167,10 +168,11 @@
 		  </div>
 		  <div class="card">
 		    <div class="card-header" id="headingThree">
-		      <h2 class="mb-0">
+		      <h2 class="mb-0 pr-5">
 		        <button class="btn btn-link collapsed mx-5 px-5" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-		          HTML A Day Challenge<a href="https://github.com/mkornyev/HTML-A-Day-Challenge" class="btn btn-primary btn-custom btn-sm active ml-4 btn-outline-warning" role="button" aria-disabled="true">Source</a>
+		          HTML A Day Challenge
 		        </button>
+		        <a href="https://github.com/mkornyev/HTML-A-Day-Challenge" class="btn btn-primary btn-custom btn-sm active ml-4 btn-outline-warning float-right mr-5" role="button" aria-disabled="true">Source</a>
 		      </h2>
 		    </div>
 		    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
@@ -191,10 +193,11 @@
 		  </div>
 		  <div class="card">
 		    <div class="card-header" id="headingFour">
-		      <h2 class="mb-0">
+		      <h2 class="mb-0 pr-5">
 		        <button class="btn btn-link collapsed mx-5 px-5" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-		          PyMusic<a href="https://github.com/mkornyev/PyMusic" class="btn btn-primary btn-custom btn-sm active ml-4 btn-outline-warning" role="button" aria-disabled="true">Source</a><a href="https://youtu.be/8jTTfHMAIsc" class="btn btn-primary btn-custom btn-sm active ml-4 btn-outline-info" role="button" aria-disabled="true">Video</a>
+		          PyMusic
 		        </button>
+		        <a href="https://github.com/mkornyev/PyMusic" class="btn btn-primary btn-custom btn-sm active ml-4 btn-outline-warning float-right mr-5" role="button" aria-disabled="true">Source</a><a href="https://youtu.be/8jTTfHMAIsc" class="btn btn-primary btn-custom btn-sm active ml-4 btn-outline-info float-right" role="button" aria-disabled="true">Video</a>
 		      </h2>
 		    </div>
 		    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
@@ -214,10 +217,11 @@
 		  </div>
 		  <div class="card">
 		    <div class="card-header" id="headingFive">
-		      <h2 class="mb-0">
+		      <h2 class="mb-0 pr-5">
 		        <button class="btn btn-link collapsed mx-5 px-5" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-		          PostgreSQL Transaction Store<a href="https://github.com/mkornyev/VenmoDB" class="btn btn-primary btn-custom btn-sm active ml-4 btn-outline-warning" role="button" aria-disabled="true">Source</a>
+		          PostgreSQL Transaction Store
 		        </button>
+		        <a href="https://github.com/mkornyev/VenmoDB" class="btn btn-primary btn-custom btn-sm active ml-4 btn-outline-warning mr-5 float-right" role="button" aria-disabled="true">Source</a>
 		      </h2>
 		    </div>
 		    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
@@ -235,13 +239,13 @@
 		      </div>
 		    </div>
 		  </div>
-		</div>
-		<div class="card">
+		  <div class="card">
 		    <div class="card-header" id="headingSix">
-		      <h2 class="mb-0">
+		      <h2 class="mb-0 pr-5">
 		        <button class="btn btn-link collapsed mx-5 px-5" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-		          TreasuryDirect CoBOL Utility<a href="https://github.com/mkornyev/BondReader" class="btn btn-primary btn-custom btn-sm active ml-4 btn-outline-warning" role="button" aria-disabled="true">Source</a>
+		          TreasuryDirect CoBOL Utility
 		        </button>
+		        <a href="https://github.com/mkornyev/BondReader" class="btn btn-primary btn-custom btn-sm active ml-4 btn-outline-warning mr-5 float-right" role="button" aria-disabled="true">Source</a>
 		      </h2>
 		    </div>
 		    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
@@ -256,12 +260,13 @@
 		      </div>
 		    </div>
 		  </div>
-		</div>
-		<!-- End accordion -->
-
-	</div> <!-- Col End --> 
-	</div> <!-- Row1 End --> 
-
+		</div> <!-- End accordion -->
+		<!-- </div> <-- Col End --> 
+		
+	
+	<!-- </div> <-- Row1 End --> 
+	</div> <!-- Container End --> 
+	<div class="container">
 	<div class="row border-top no-gutters footer pt-2 mt-4">
 	    <div class="col align-self-start">
 	      Visits<br>
@@ -274,7 +279,8 @@
 	    <div class="col align-self-end text-right">
 	      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a> This work is licensed under a <br><a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 	    </div>
-	  </div>
+	</div>
+	</div>
 
 	</div>
 </body>
