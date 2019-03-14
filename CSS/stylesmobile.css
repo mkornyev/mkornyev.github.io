@@ -41,6 +41,10 @@
 		border-bottom: none;
 	}
 
+	.flip-container {
+		display: none;
+	}
+
 }
 
 @media screen and (max-width: 1193px) {
