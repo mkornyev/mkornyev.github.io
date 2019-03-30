@@ -86,15 +86,15 @@
 		<br>
 		<br>
 		<!-- Form -->
-		<form onsubmit="return validate()">
+		<form onsubmit="return validate()" action="mailto:mkornyev@andrew.cmu.edu" method="post" enctype="text/plain">
 		<fieldset class="border w-100">
 			<legend class="pl-4 ml-1">Leave me some contact info:</legend><br>
 			
 			<label class="ml-3">Name</label><br>
-			<input type="text" class="form-control ml-3" pattern="[A-Za-z -]*" name="name" style="width: 250px;" maxlength="20" placeholder="Your Name"><br>
+			<input type="text" class="form-control ml-3" pattern="[A-Za-z -]*" name="name" style="width: 250px;" maxlength="20" placeholder="Your Name" required><br>
 		
 			<label class="ml-3">Message</label><br>
-			<textarea class="form-control ml-3" id="exampleFormControlTextarea1" rows="10" cols="50" maxlength="1000" placeholder="What do you have to say?" style="width: 500px;"></textarea>
+			<textarea class="form-control ml-3" id="exampleFormControlTextarea1" rows="10" cols="50" maxlength="1000" placeholder="What do you have to say?" style="width: 500px;" required></textarea>
 			
 			<label class="ml-3 mt-4">How'd you hear about me?</label><br>
 			<select class="ml-3" name="heard" >
@@ -114,12 +114,15 @@
     		<label class="form-check-label ml-5"> Yes</label> <br>
 
 			<label class="ml-3 mt-4">Your phone number</label><br>
-			<input type="text" class="ml-3 form-control" id="phone" placeholder="3152965003" style="width: 250px;" required><br>
+			<input type="text" class="ml-3 form-control" id="phone" placeholder="3152965003" patter="\d{10}" style="width: 250px;" required><br>
 
-			<label class="ml-3">Password</label><br>
-			<input type="text" class="ml-3 form-control" name="pw" maxlength="20" placeholder="Choose a password" style="width: 250px;"><br>
 
-			<button type="button" class="ml-3 mb-3 btn btn-primary">Submit</button>
+			<!--
+			<button type="submit" name="contact_form_submit" value="Send">Submit</button><br/><br/>
+			<button type="reset" name="contact_form_submit" value="Reset">Reset</button> 
+			-->
+			<button type="submit" name="contact_form_submit" value="Send"class="ml-3 mb-3 btn btn-primary">Submit</button>
+			<button type="reset" name="contact_form_submit" value="Reset"class="ml-3 mb-3 btn btn-primary px-3">Reset</button>
 		</fieldset><br>			
 		</form>
 	</div>
