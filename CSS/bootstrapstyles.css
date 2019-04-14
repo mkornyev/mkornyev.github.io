@@ -5,6 +5,10 @@
 
 } */
 
+.navbar-width {
+ 
+}
+
 .nav-link {
 	color: #ffc107 !important;
 }
@@ -90,72 +94,42 @@
 
                 /* Underline Effect */
 /* ################################################ */
-a.underline_effect_1:after {
-	content: '';
+nav a.underline_effect,
+nav a.underline_effect:after,
+nav a.underline_effect:before {
+  transition: all .5s;
+}
+
+nav a.underline_effect{
+  display: block;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 1.25em;
+}
+
+nav a.underline_effect{
+  position: relative;
+}
+nav a.underline_effect:after{
   position: absolute;
+  bottom: 0;
   left: 0;
-  display: inline-block;
-  height: 1em;
-  width: 6%;
-  margin-left: 1.8em;
-  border-bottom: 1px solid;
-  margin-top: 10px;
-  opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: scale(0,1);
-	transform: scale(0,1);
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #ffc107;
+  height: 1px;
 }
 
-a.underline_effect_2:after {
-	content: '';
-  position: absolute;
-  left: 0;
-  display: inline-block;
-  height: 1em;
-  width: 6%;
-  margin-left: 7.1em;
-  border-bottom: 1px solid;
-  margin-top: 10px;
-  opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: scale(0,1);
-	transform: scale(0,1);
+nav a.current_link{
+  font-weight: 700;
+  height: auto;
 }
 
-a.underline_effect_3:after {
-	content: '';
-  position: absolute;
-  left: 0;
-  display: inline-block;
-  height: 1em;
-  width: 6%;
-  margin-left: 12.7em;
-  border-bottom: 1px solid;
-  margin-top: 10px;
-  opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: scale(0,1);
-	transform: scale(0,1);
+nav a.underline_effect:hover:after {
+  width: 75%;
 }
 
-a.underline_effect_1:hover:after {
-  opacity: 1;
-	-webkit-transform: scale(1);
-	transform: scale(1);
-}
-
-a.underline_effect_2:hover:after {
-  opacity: 1;
-	-webkit-transform: scale(1);
-	transform: scale(1);
-}
-
-a.underline_effect_3:hover:after {
-  opacity: 1;
-	-webkit-transform: scale(1);
-	transform: scale(1);
-}
 /* ################################################ */
