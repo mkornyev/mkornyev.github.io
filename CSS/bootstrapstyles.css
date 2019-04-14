@@ -49,6 +49,13 @@
   color: #ffc107;
 }
 
+.gallery {
+  margin-left: 18%;
+  margin-bottom: 10px;
+  width: 65%;
+  height: 100%;
+}
+
     /* Flipping effect. Credit: DavidWalsh.name */
 /* ################################################ */
 /* entire container, keeps perspective */
