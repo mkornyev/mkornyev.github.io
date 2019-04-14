@@ -12,6 +12,7 @@
 
 	<!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" media="all" type="text/css" href="CSS/stylesmobile.css" />
     <!-- CSS -->
     <link rel="stylesheet" media="all" type="text/css" href="CSS/bootstrapstyles.css" />
     <!-- Optional JavaScript -->
@@ -25,7 +26,7 @@
 <div class="col-lg-10 px-5">
 <header>
 	<!-- FLIPPED LOGO -->
-	<a href="https://mkornyev.github.io/">
+	<a class="flip-container" href="https://mkornyev.github.io/">
 	<div class="flip-container img_header pt-3" ontouchstart="this.classList.toggle('hover');">
 		<div class="flipper">
 			<div class="front">
@@ -43,7 +44,7 @@
 
 <!-- NavBar --> 
 <nav class="navbar navbar-dark bg-dark pl-4 pr-4">
-  <!-- Horizontal allignment --> 
+  <!-- Standard Nav -->
   <ul class="nav justify-content-center ml-5 pl-4">
   	  <li class="nav-item">
 	    <a class="nav-link active underline_effect pl-3 ml-5" href="index.html">About</a>
@@ -53,6 +54,18 @@
 	  </li>
 	  <li class="nav-item">
 	    <a class="nav-link underline_effect current_link" href="contact.html">Contact</a>
+	  </li>
+  </ul>
+  <!-- Mobile Nav -->
+  <ul class="nav mobile-nav">
+  	  <li class="nav-item mobile-nav">
+	    <a class="nav-link active underline_effect current_link mobile-nav" href="index.html">About</a>
+	  </li>
+	  <li class="nav-item mobile-nav">
+	    <a class="nav-link underline_effect mobile-nav" href="projects.html">Projects</a>
+	  </li>
+	  <li class="nav-item mobile-nav">
+	    <a class="nav-link underline_effect mobile-nav" href="contact.html">Contact</a>
 	  </li>
   </ul>
   <!-- Search Box -->
@@ -75,7 +88,6 @@
 
 <body id="index_body">
 	
-	<!-- TOP_NAVBAR -->
 	<div class="row justify-content-md-center">
 		<div class="col-lg-10 px-5">
 		<header>

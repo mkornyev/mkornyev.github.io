@@ -5,8 +5,8 @@
 
 } */
 
-.navbar-width {
- 
+.mobile-nav {
+  display: none;
 }
 
 .nav-link {
@@ -43,6 +43,10 @@
 
 .footer {
    font-size: .85em;
+}
+
+.leading-zeroes {
+  color: #ffc107;
 }
 
     /* Flipping effect. Credit: DavidWalsh.name */
@@ -104,7 +108,7 @@ nav a.underline_effect{
   display: block;
   text-decoration: none;
   font-weight: 300;
-  font-size: 1.25em;
+  font-size: 1.15em;
 }
 
 nav a.underline_effect{
@@ -124,8 +128,7 @@ nav a.underline_effect:after{
 }
 
 nav a.current_link{
-  font-weight: 700;
-  height: auto;
+  font-weight: 600;
 }
 
 nav a.underline_effect:hover:after {

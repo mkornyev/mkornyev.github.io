@@ -44,7 +44,7 @@
 
 <!-- NavBar --> 
 <nav class="navbar navbar-dark bg-dark pl-4 pr-4">
-  <!-- Horizontal allignment --> 
+  <!-- Standard Nav -->
   <ul class="nav justify-content-center ml-5 pl-4">
   	  <li class="nav-item">
 	    <a class="nav-link active underline_effect pl-3 ml-5" href="index.html">About</a>
@@ -54,6 +54,18 @@
 	  </li>
 	  <li class="nav-item">
 	    <a class="nav-link underline_effect" href="contact.html">Contact</a>
+	  </li>
+  </ul>
+  <!-- Mobile Nav -->
+  <ul class="nav mobile-nav">
+  	  <li class="nav-item mobile-nav">
+	    <a class="nav-link active underline_effect mobile-nav" href="index.html">About</a>
+	  </li>
+	  <li class="nav-item mobile-nav">
+	    <a class="nav-link underline_effect current_link mobile-nav" href="projects.html">Projects</a>
+	  </li>
+	  <li class="nav-item mobile-nav">
+	    <a class="nav-link underline_effect mobile-nav" href="contact.html">Contact</a>
 	  </li>
   </ul>
   <!-- Search Box -->
@@ -206,6 +218,30 @@
 		        	<li>2/24 - (again) Homepage simple-fitted with Bootstrap framework. New Navbar and effects added. </li>
 		        </ul>
 		        Spending a couple of hours each day, I built a prototype of my personal website and implemented site forms, graphs, and embedded content with custom-built Stylesheets and JS functions.  
+		      </div>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <div class="card-header" id="headingThreeFour">
+		      <h2 class="mb-0 pr-5">
+		        <button class="btn btn-link collapsed mx-5 px-5" type="button" data-toggle="collapse" data-target="#collapseThreeFour" aria-expanded="false" aria-controls="collapseThreeFour">
+		          Ethereum Smart Contract
+		        </button>
+		        <a href="https://github.com/mkornyev/EthereumSmartContract" class="btn btn-primary btn-custom btn-sm active ml-4 btn-outline-warning float-right mr-5" role="button" aria-disabled="true">Source</a>
+		      </h2>
+		    </div>
+		    <div id="collapseThreeFour" class="collapse" aria-labelledby="headingThreeFour" data-parent="#accordionExample">
+		      <div class="card-body">
+		      	<p class="lead pl-4 pt-2">Skills Learned:</p>
+		        <ul>
+		        	<li>Transacting w/Smart Contracts</li>
+		        	<li>OOP in the Solidity IDE</li>
+		        	<li>Balancing efficiency and Gas cost</li>
+		        </ul>
+		        Created a computationally-infeasible hash puzzle wager system. The difficulty of the puzzle and the reward amount decrease by a factor of two every hour.<br/><br/>
+		        The smart contract is a wager-backed puzzle where a user can win by computing hash function outputs with leading zeroes. The difficulty, indicated by the contract owner, is the number of leading zeroes required for a user to win the wager.<br/><br/>
+		        A winning hash (for a difficulty of 4) is computed as such:<br><br/>
+		        <strong class="px-4">0x<span class="leading-zeroes">0000</span>4fg3108gsln... = SHA256(input)</strong>
 		      </div>
 		    </div>
 		  </div>

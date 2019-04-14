@@ -60,7 +60,7 @@
 
 <!-- NavBar --> 
 <nav class="navbar navbar-dark bg-dark pl-4 pr-4">
-  <!-- Horizontal allignment --> 
+  <!-- Standard Nav --> 
   <ul class="nav justify-content-center ml-5 pl-4">
   	  <li class="nav-item">
 	    <a class="nav-link active underline_effect current_link pl-3 ml-5" href="index.html">About</a>
@@ -72,8 +72,20 @@
 	    <a class="nav-link underline_effect" href="contact.html">Contact</a>
 	  </li>
   </ul>
+  <!-- Mobile Nav -->
+  <ul class="nav mobile-nav">
+  	  <li class="nav-item mobile-nav">
+	    <a class="nav-link active underline_effect current_link mobile-nav" href="index.html">About</a>
+	  </li>
+	  <li class="nav-item mobile-nav">
+	    <a class="nav-link underline_effect mobile-nav" href="projects.html">Projects</a>
+	  </li>
+	  <li class="nav-item mobile-nav">
+	    <a class="nav-link underline_effect mobile-nav" href="contact.html">Contact</a>
+	  </li>
+  </ul>
     <!-- Search Box -->
-	<table cellpadding=0 cellspacing=0 border=0 >
+	<table class="search_bar" cellpadding=0 cellspacing=0 border=0 >
 	<tr>
 		<td  style="font-family: Arial, Helvetica, sans-serif; font-size: 7.5pt;">
 			<form class="form-inline mr-5 pr-4" style="margin:0px; margin-top:4px;" action="https://search.freefind.com/find.html"  method="get" accept-charset="utf-8" target="_self">
@@ -83,7 +95,7 @@
 			<input type="hidden" name="_charset_" value="">
 			<input type="hidden" name="bcd" value="&#247;">
 			<input class="form-control mr-sm-2 float-left search_bar" type="text" name="query" size="15" placeholder="Search"> 
-			<button type="submit" value="search" class="btn search_bar btn-outline-warning pr-3 mr-5">Search</button>
+			<button type="submit" value="search" class="btn btn-outline-warning pr-3 mr-5">Search</button>
 			</form>
 		</td>
 	</tr>
@@ -97,7 +109,7 @@
 		<div class="col-lg-10 px-5">
 		<header>
 			<!-- Heading --> 
-			<h4 class="py-3 border-bottom">Carnegie Mellon University | <small>Information Systems</small> | <small>Class of 2021</small></h4>
+			<h4 class="py-3 border-bottom">Carnegie Mellon University <span>| </span><small>Information Systems</small> <span>| </span><small>Class of 2021</small></h4>
 		</header>
 		</div>
 	</div>
@@ -106,14 +118,14 @@
 	<div class="container">
 	<div class="row justify-content-md-center">
 	<div class=".col p-3 pt-3"> 
-		<figure class="figure">
+		<figure class="figure center-img">
 		  <img src="my_images/Headshot.JPG" class="figure-img img-fluid rounded" width='250px' alt="Photo">
 		  <figcaption class="figure-caption text-right">Me, Sept 2018</figcaption>
 		</figure>
 	</div>
 
 	<div id=".col">
-		<fieldset class="border mx-4 pl-3 mb-3 mt-3">
+		<fieldset class="border mx-4 pl-3 mb-3 mt-3 announcement">
 			<legend>Announcement</legend>
 			<p><a class="nav-link active reg-link" href="https://www.linkedin.com/in/mkornyev">We are under bootstrap reconstruction, sorry for the inconvenience!</a></p>
 		</fieldset>

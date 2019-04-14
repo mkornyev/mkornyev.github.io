@@ -10,10 +10,6 @@
 		margin-left: 30px;
 	}
 
-	.search_bar {
-		display: none;
-	}
-
 	.figure-img {
 		margin-left: 30px;
 	}
@@ -29,8 +25,34 @@
 		font-size: 1.25em; 
 		margin: 0; 
 	}
-	#content img {
+
+	fieldset.announcement {
 		display: none; /* Remove image in smaller screens*/
+	}
+
+	.center-img {
+		margin-left: 20%;
+
+	}
+
+	header h4 {
+		text-align: center;
+	}
+
+	header h4 span {
+		display: none;
+	}
+
+	nav,
+	nav ul,
+	nav ul li,
+	nav ul li a {
+		display: none;
+	}
+
+	.mobile-nav {
+		display: inline;
+		text-align: center;
 	}
 
 	#bio {
@@ -45,6 +67,12 @@
 		display: none;
 	}
 
+}
+
+@media screen and (max-width: 823px) {
+	.search_bar {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 1193px) {
