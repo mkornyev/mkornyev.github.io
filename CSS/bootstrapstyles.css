@@ -51,9 +51,9 @@
 
 div.carousel {
   width: 1000px; 
-  height: 518px;
+  height: 520px;
   margin: auto;
-  border-top: 1px solid black;
+  border: 2px solid black;
   margin-bottom: 0px;
   padding-bottom: 0px;
 }
