@@ -49,11 +49,48 @@
   color: #ffc107;
 }
 
-.gallery {
-  margin-left: 18%;
-  margin-bottom: 10px;
-  width: 65%;
-  height: 100%;
+div.carousel {
+  width: 1000px; 
+  height: 518px;
+  margin: auto;
+  border-top: 1px solid black;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+    /* Bootstrap Carousel */
+/* ################################################ */
+
+.carouselExampleIndicators h5 {
+  background-color: black;
+  color: black;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 30px;
+  width: 30px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 7px solid black;
+  background-image: none;
+  font-weight: 940;
+  margin-bottom: 20%;
+  padding-top: 0px;
+}
+
+.carousel-control-next-icon:after
+{
+  font-size: 20px;
+  color: black;
+  margin-bottom: 10%;
+}
+
+.carousel-control-prev-icon:after {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 10%;
 }
 
     /* Flipping effect. Credit: DavidWalsh.name */
