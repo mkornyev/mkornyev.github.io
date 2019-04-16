@@ -10,6 +10,10 @@
 		margin-left: 30px;
 	}
 
+	.no-footer {
+		display: none;
+	}
+
 	.figure-img {
 		margin-left: 30px;
 	}
@@ -43,8 +47,6 @@
 		display: none;
 	}
 
-	nav,
-	nav ul,
 	nav ul li,
 	nav ul li a {
 		display: none;
@@ -70,8 +72,14 @@
 }
 
 @media screen and (max-width: 823px) {
-	.search_bar {
+	.search_bar,
+	div.carousel-row,
+	h5.carousel-h5 {
 		display: none;
+	}
+
+	.footer {
+		margin-bottom: 2%;
 	}
 }
 
