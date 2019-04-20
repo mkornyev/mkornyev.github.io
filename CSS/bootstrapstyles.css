@@ -5,6 +5,10 @@
 
 } */
 
+.mobile_nav {
+  display: none;
+}
+
 .mobile-nav {
   display: none;
 }

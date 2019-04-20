@@ -1,5 +1,9 @@
 @media screen and (max-width: 480px) {
 
+	.mobile_nav {
+		display: inline;
+	}
+
 	body {
 		font-size: 100%;
 		background-color: #faf7f3;
@@ -8,6 +12,7 @@
 	.footer {
 		text-align: center;
 		margin-left: 30px;
+		display: none;
 	}
 
 	.no-footer {
@@ -74,7 +79,8 @@
 @media screen and (max-width: 823px) {
 	.search_bar,
 	div.carousel-row,
-	h5.carousel-h5 {
+	h5.carousel-h5,
+	div.github-card {
 		display: none;
 	}
 
