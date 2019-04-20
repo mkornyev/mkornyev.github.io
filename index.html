@@ -30,6 +30,7 @@
     <link rel="stylesheet" media="all" type="text/css" href="CSS/bootstrapstyles.css" />
     <link rel="stylesheet" media="all" type="text/css" href="CSS/stylesmobile.css" />
     <!-- JS -->
+    <script type="text/javascript" src="https://unpkg.com/vue@2.5.9/dist/vue.js"></script>
     <script type="text/javascript" src="JS/scripts.js"></script>
     <script src="//inc.freefind.com/inc/ffse-overlay.min.js" async></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -102,6 +103,7 @@
 	</table>
 </nav>
 
+<div class="fade-in">
 <body id="index_body">
 	<!-- TOP_NAVBAR -->
 	<div class="row justify-content-md-center">
@@ -126,10 +128,6 @@
 	</div>
 
 	<div id=".col">
-		<fieldset class="border mx-4 pl-3 mb-3 mt-3 announcement">
-			<legend>Announcement</legend>
-			<p><a class="nav-link active reg-link" href="https://www.linkedin.com/in/mkornyev">We are under bootstrap reconstruction, sorry for the inconvenience!</a></p>
-		</fieldset>
 
 		<fieldset class="border mx-4 pl-3 mb-3 mt-3">
 			<legend  class="w-auto">Tag</legend>
@@ -179,12 +177,58 @@
 		<a href="https://www.facebook.com/max.kornyev"><img src="my_images/facebook.png" width="32px"></a>
 		<a href="https://github.com/mkornyev"><img src="my_images/github.png" width="32px"></a><br>
 	</div>
+
+	<!-- VUE JS Section -->
+
+	<fieldset class="border announcement mt-3" style="width: 150%">
+		<legend style="font-size: 1.5em; margin-left: 1em;">My Github Repos</legend>
+		
+		<div>
+			<div id="gitApi" style="font-size: .5em;">
+				<ol>
+					<li v-for="repo in repos">{{ repo['name'] }}</li>
+				</ol>
+			</div>
+
+
+			<script>	
+				var vm = new Vue({
+					
+					el: '#gitApi',  
+									
+					data: {
+						repos: []
+					},
+					
+					created() {
+						this.fetchData()
+					},
+					
+					methods: {
+						fetchData: function() {
+							var xhr = new XMLHttpRequest()
+							var self = this
+							xhr.open('GET', 'https://api.github.com/search/repositories?q=/mkornyev')
+							xhr.onload = function() {
+								self.repos = JSON.parse(xhr.responseText).items
+							}
+							xhr.send()
+						}
+					}
+				});
+			</script>
+		</div>
+
+	</fieldset>
+	<p style="font-size: .75em; color: #808080;">powered by the <a href="https://developer.github.com/v3/">Github api</a></p>
+
 	</div>
 
 	</div>
 	</div>
-
 </body>
+
+
 <h5 class="carousel-h5" style="margin-left: 15%; color: #ffc107;">What I've been building:</h5>
 <!-- Gallery, hardcoded height-->
 <div class="row carousel-row" style="height: 517px; margin-bottom: 2%;">
@@ -226,9 +270,10 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div>
-<!-- Gallery -->
-</div>
+	</div>
+	<!-- Gallery -->
+	</div>
+	</div>
 </div>
 
 <div class="row border-top no-gutters footer pt-2 no-footer">
