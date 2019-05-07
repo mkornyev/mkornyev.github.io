@@ -62,6 +62,10 @@ div.carousel {
   padding-bottom: 0px;
 }
 
+div.accordion button.btn {
+  text-decoration: none;
+}
+
 div.fade-in {
   animation: fadeIn 1s;
 }
