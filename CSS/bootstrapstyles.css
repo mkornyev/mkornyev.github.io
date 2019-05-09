@@ -5,6 +5,17 @@
 
 } */
 
+div.link-div a {
+  opacity: 1;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  filter: blur(0px);
+}
+div.link-div a:hover {
+  opacity: .5;
+  filter: blur(1px);
+}
+
 .mobile_nav {
   display: none;
 }
