@@ -5,6 +5,21 @@
 
 } */
 
+
+.border-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#parallax {
+  background: url(../my_images/bgstripe.png);
+  background-attachment: fixed;
+  /*background-position: bottom left;*/
+  background-position: bottom 10px right 0px;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+}
+
 div.link-div a {
   opacity: 1;
   -webkit-transition: .2s ease-in-out;
@@ -68,7 +83,7 @@ div.carousel {
   width: 1000px; 
   height: 520px;
   margin: auto;
-  border: 2px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 0px;
   padding-bottom: 0px;
 }
