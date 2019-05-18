@@ -2,8 +2,8 @@
 $(function () {
 	$("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
 });
-/* 
 
+/* 
 Deprecated: Here for later development 
 
 //Projects descriptions

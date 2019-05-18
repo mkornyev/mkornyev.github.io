@@ -40,6 +40,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 
+<div class="modal" id="mymodal">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content" style="all: unset; display: flex;" >
+			<div class="modal-body" style="width: 710px; height: 600px;">
+			<button class="close" type="button btn-custom" data-dismiss="modal">+</button>
+			 <embed src="Resume.pdf" type="application/pdf" class="modal-content" style="height: 600px;"></embed>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End -->
+
 <div class="row justify-content-md-center">
 <div class="col-lg-10 px-5">
 <header>
@@ -151,16 +163,19 @@
 			</div>
 		</fieldset>
 
-		<div style="position: relative; left: 38%;">
-			<a href="Resume.pdf" class="btn btn-primary btn-lg active my-3 btn-custom" role="button" aria-disabled="true">Resume</a>
+		<div style="text-align: center;">
+		<a href="#" class="btn btn-primary btn-lg active btn-custom"data-toggle="modal" data-target="#mymodal">Resume</a>
 		</div>
+		<!-- <div style="position: relative; left: 38%;">
+			<a href="Resume.pdf" class="btn btn-primary btn-lg active my-3 btn-custom" role="button" aria-disabled="true">Resume</a>
+		</div> -->
 
 		<fieldset class="border mx-4 mb-3 border-shadow" style="background-color: white;">
    			<legend  class="w-auto pl-3" style="text-shadow: 1.75px 1.25px 1px #fff;">Relevant Coursework</legend>
    			<ul>
-   			<li>67-272: Application Design and Development</li>
-			<li>67-262: Database Design and Development</li>
-			<li>15-122: Principles of Imperative Computation (Structures)</li>
+   			<li><a href="https://67272.cmuis.net/" target="_blank">67-272</a>: Application Design and Development</li>
+			<li><a href="https://www.cmu.edu/information-systems/images/syllabi/67262-database-des-dev-f16.pdf" target="_blank">67-262</a>: Database Design and Development</li>
+			<li><a href="https://www.cs.cmu.edu/~15122/" target="_blank">15-122</a>: Principles of Imperative Computation (Structures)</li>
 			</ul>
 		</fieldset>
 		
@@ -179,9 +194,9 @@
 		<h3 class="pt-3" style="text-shadow: 1.75px 1.25px 1px #fff;">Links</h3>
 		<!--<div>Icons made by <a href="https://www.flaticon.com/authors/pixel-buddha" title="Pixel Buddha">Pixel Buddha</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a>-->
 		<a href="mailto:mkornyev@andrew.cmu.edu"><img src="my_images/email.png" width="32px"></a>
-		<a href="https://www.linkedin.com/in/mkornyev"><img src="my_images/linkedIn.png" width="32px"></a>
-		<a href="https://www.facebook.com/max.kornyev"><img src="my_images/facebook.png" width="32px"></a>
-		<a href="https://github.com/mkornyev"><img src="my_images/github.png" width="32px"></a><br>
+		<a href="https://www.linkedin.com/in/mkornyev" target="_blank"><img src="my_images/linkedIn.png" width="32px"></a>
+		<a href="https://www.facebook.com/max.kornyev" target="_blank"><img src="my_images/facebook.png" width="32px"></a>
+		<a href="https://github.com/mkornyev" target="_blank"><img src="my_images/github.png" width="32px"></a><br>
 	</div>
 
 	<!-- VUE JS Section -->
