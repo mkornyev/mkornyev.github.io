@@ -5,6 +5,10 @@
 
 } */
 
+.main-heading {
+  color: #6c757d;
+}
+
 .card-header a {
   margin-top: .6%;
 }
@@ -57,7 +61,7 @@
 #parallax {
   background: url(../my_images/bgstripe.png);
   background-attachment: fixed;
-  background-position: bottom 10px right 0px;
+  background-position: bottom -55px right 0px;
   background-repeat: no-repeat;
   background-size: auto;
 }
@@ -73,7 +77,7 @@
 #parallax.right {
   background: url(../my_images/bgstripe3.png);
   background-attachment: fixed;
-  background-position: top 250px left 0px;
+  background-position: bottom -50px left 0px;
   background-repeat: no-repeat;
   background-size: auto;
 }
