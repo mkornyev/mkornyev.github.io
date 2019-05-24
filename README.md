@@ -4,4 +4,4 @@
 * Hosted 100% by Github Pages 
 
 # mk
-![alt text](MK.png "Logo")
+<img src="MK.png" class="img-fluid img_header text-center" width="60px" alt="Logo">
