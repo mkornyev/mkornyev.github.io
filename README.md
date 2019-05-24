@@ -1,7 +1,7 @@
 # The personal website of :: Maksym Kornyev :: 
 
-* Check out some of my projects or get in touch. 
-* Hosted 100% by Github Pages 
+* Check out some of my projects or get in touch! 
+###### Hosting by Github Pages 
 
 
 <br>
