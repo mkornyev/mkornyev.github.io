@@ -5,6 +5,10 @@
 
 } */
 
+.card-header a {
+  margin-top: .6%;
+}
+
 /* Resume Modal */
 .close {
   /*all: unset;*/
