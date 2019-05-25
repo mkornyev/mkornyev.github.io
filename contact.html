@@ -120,19 +120,19 @@
 		<br>
 		<br>
 		<!-- Form -->
-		<form onsubmit="return validate()" action="mailto:mkornyev@andrew.cmu.edu" method="post" enctype="text/plain">
+		<form class="contact-form" onsubmit="return validate()" target="_top" method="post" enctype="text/plain">
 		<fieldset class="border w-100 border-shadow" style="background-color: white; margin-bottom: 8.5%;">
 			<legend class="pl-4 ml-1">Get in touch:</legend>
 			
 			<label class="ml-3">Name</label><br>
-			<input type="text" class="form-control ml-3" pattern="[A-Za-z -]*" name="Name" style="width: 250px;" maxlength="20" placeholder="Your Name" required><br>
+			<input type="text" class="form-control ml-3" pattern="[A-Za-z -]*" name="     Name " style="width: 250px;" maxlength="20" placeholder="Your Name" required><br>
 		
 			<label class="ml-3">Message</label><br>
-			<textarea class="form-control ml-3" id="exampleFormControlTextarea1" rows="10" cols="50" maxlength="1000" name="Message" placeholder="What do you have to say?" style="width: 500px; height: 100px;" required></textarea>
+			<textarea class="form-control ml-3" id="exampleFormControlTextarea1" rows="10" cols="50" maxlength="1000" name="Message " placeholder="What do you have to say?" style="width: 500px; height: 100px;" required></textarea>
 			
 			<label class="ml-3 mt-4">How'd you hear about me?</label><br>
 			<div class="input-group mb-3 ml-3" style="width: 77.5%;">
-			  <select class="custom-select" id="inputGroupSelect01">
+			  <select name="     Heard " class="custom-select" id="inputGroupSelect01">
 			    <option selected value="Google">Google</option>
 			    <option value="Online">Online</option>
 			    <option value="Recruiter">Recruiter</option>
@@ -141,21 +141,18 @@
 			</div>
 		
 			<label class="ml-3 mt-4">Your Email</label><br>
-    		<input type="email" name="Email" class="form-control ml-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="your-email@yandex.com" pattern=".+@(([\w-]+\.)+(com|edu|org|net|gov|mil|biz|info|[a-zA-Z]*))" style="width: 250px;" required>
+    		<input type="email" name="      Email " class="form-control ml-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="your-email@yandex.com" pattern=".+@(([\w-]+\.)+(com|edu|org|net|gov|mil|biz|info|[a-zA-Z]*))" style="width: 250px;" required>
     		<small id="emailHelp" class="form-text text-muted ml-3">We'll never share your email with anyone else.</small>
 
 			<label class="ml-3 mt-4">Your phone number</label><br>
-			<input type="text" name="Phone Number" class="ml-3 form-control" id="phone" placeholder="3152965003" patter="\d{10}" maxlength="10" minlength="10" style="width: 250px;" required><br>
+			<input type="text" name="     Phone " class="ml-3 form-control" id="phone" placeholder="3152965003" pattern="\d{10}" maxlength="10" minlength="10" style="width: 250px;" required><br>
 
-
-			<!--
-			<button type="submit" name="contact_form_submit" value="Send">Submit</button><br/><br/>
-			<button type="reset" name="contact_form_submit" value="Reset">Reset</button> 
-			-->
 			<button type="submit" name="contact_form_submit" value="Send"class="ml-3 mb-3 btn btn-warning">Submit</button>
 			<button type="reset" name="contact_form_submit" value="Reset"class="ml-3 mb-3 btn btn-outline-warning px-3">Reset</button>
 		</fieldset><br>			
 		</form>
+		<!-- Hidden Mailto Action (see the JS at bottom) -->
+		<a class="mail" href="mailto:mkornyev@gmail.com?Subject=Contact%20Form" target="_top" style="display: none;">Send Mail</a>  
 	</div>
 
 	<div class=".col-4 offset-md-2 pt-3 pl-1 text-left footer">
@@ -195,5 +192,20 @@
 </div>
 </div>
 </section>
+
+<!-- Manual Mailto Action (for mobile compatibility across browsers) -->
+<script type="text/javascript">
+	$('.contact-form').on('submit', function(e) {
+	  var messageBody = '';
+	  $.each($('.contact-form').serializeArray(), function(i, field) {
+	    messageBody += field.name + ": " + field.value + '%0D%0A';
+	  });
+
+	  var hreflink = "mailto:mkornyev@gmail.com?Subject=Contact%20Form&body=" + messageBody;
+	  $('.mail').attr("href", hreflink);
+	  e.preventDefault();
+	  $('.mail')[0].click()
+	});
+</script>
 
 </html>
