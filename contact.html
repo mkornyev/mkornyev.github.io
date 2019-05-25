@@ -17,11 +17,7 @@
     <link rel="stylesheet" media="all" type="text/css" href="CSS/stylesmobile.css" />
     <!-- CSS -->
     <link rel="stylesheet" media="all" type="text/css" href="CSS/bootstrapstyles.css" />
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- JS (at bottom for optimized loading) -->   
 </head>
 
 <div class="row justify-content-md-center">
@@ -125,14 +121,14 @@
 			<legend class="pl-4 ml-1">Get in touch:</legend>
 			
 			<label class="ml-3">Name</label><br>
-			<input type="text" class="form-control ml-3" pattern="[A-Za-z -]*" name="Name" style="width: 250px;" maxlength="20" placeholder="Your Name" required><br>
+			<input type="text" class="form-control ml-3" pattern="[A-Za-z -]*" name="     Name " style="width: 250px;" maxlength="20" placeholder="Your Name" required><br>
 		
 			<label class="ml-3">Message</label><br>
-			<textarea class="form-control ml-3" id="exampleFormControlTextarea1" rows="10" cols="50" maxlength="1000" name="Message" placeholder="What do you have to say?" style="width: 500px; height: 100px;" required></textarea>
+			<textarea class="form-control ml-3" id="exampleFormControlTextarea1" rows="10" cols="50" maxlength="1000" name="Message " placeholder="What do you have to say?" style="width: 500px; height: 100px;" required></textarea>
 			
 			<label class="ml-3 mt-4">How'd you hear about me?</label><br>
 			<div class="input-group mb-3 ml-3" style="width: 77.5%;">
-			  <select class="custom-select" id="inputGroupSelect01">
+			  <select class="custom-select" id="inputGroupSelect01" name="     Heard ">
 			    <option selected value="Google">Google</option>
 			    <option value="Online">Online</option>
 			    <option value="Recruiter">Recruiter</option>
@@ -141,19 +137,19 @@
 			</div>
 		
 			<label class="ml-3 mt-4">Your Email</label><br>
-    		<input type="email" name="Email" class="form-control ml-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="your-email@yandex.com" pattern=".+@(([\w-]+\.)+(com|edu|org|net|gov|mil|biz|info|[a-zA-Z]*))" style="width: 250px;" required>
+    		<input type="email" name="      Email " class="form-control ml-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="your-email@yandex.com" pattern=".+@(([\w-]+\.)+(com|edu|org|net|gov|mil|biz|info|[a-zA-Z]*))" style="width: 250px;" required>
     		<small id="emailHelp" class="form-text text-muted ml-3">We'll never share your email with anyone else.</small>
 
 			<label class="ml-3 mt-4">Your phone number</label><br>
-			<input type="text" name="Phone Number" class="ml-3 form-control" id="phone" placeholder="3152965003" patter="\d{10}" maxlength="10" minlength="10" style="width: 250px;" required><br>
+			<input type="text" name="     Phone " class="ml-3 form-control" id="phone" placeholder="3152965003" pattern="\d{10}" maxlength="10" minlength="10" style="width: 250px;" required><br>
 
 
 			<!--
 			<button type="submit" name="contact_form_submit" value="Send">Submit</button><br/><br/>
 			<button type="reset" name="contact_form_submit" value="Reset">Reset</button> 
 			-->
-			<button type="submit" name="contact_form_submit" value="Send"class="ml-3 mb-3 btn btn-warning">Submit</button>
-			<button type="reset" name="contact_form_submit" value="Reset"class="ml-3 mb-3 btn btn-outline-warning px-3">Reset</button>
+			<button type="submit" value="Send"class="ml-3 mb-3 btn btn-warning">Submit</button>
+			<button type="reset" value="Reset"class="ml-3 mb-3 btn btn-outline-warning px-3">Reset</button>
 		</fieldset><br>			
 		</form>
 	</div>
@@ -195,5 +191,10 @@
 </div>
 </div>
 </section>
+
+<!-- JS (at bottom for optimized loading) -->   
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </html>
