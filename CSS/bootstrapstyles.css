@@ -5,6 +5,20 @@
 
 } */
 
+#index_body fieldset {
+  width: 100%;
+}
+
+form.contact-form input,
+form div.contact-select {
+  width: 60%;
+}
+
+textarea.contact-msg {
+  width: 80%;
+  height: 7em;
+}
+
 .main-heading {
   color: #6c757d;
 }

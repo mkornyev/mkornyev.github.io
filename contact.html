@@ -99,35 +99,35 @@
 </body>
 
 <section id="parallax" class="right">
-<div class="fade-in">
+<div class="fade-in" style="margin-bottom: -50px;">
 <body id="index_body">
 
 	<div class="container">
 	<div class="row">
 
-	<div class=".col=8 pl-5 pr-5 py-3">
+	<div class=".col=8 pl-5 pr-5 py-3" style="overflow: hidden;">
 		<h3 class="pb-2">Contact</h3>
-		<p class="lead">See my current location, or leave me your contact info so we can get in touch.</p>
+		<p class="lead">See what I'm up to, or leave me your contact info so we can get in touch.</p>
 		<div style="display: inline;">
-			<p class="text-bottom pl-4 ml-1" style="display: inline;">Current Location:</p><button type="button" class="btn btn-md btn-outline-primary ml-4" style="display: inline; opacity: 1; color: #007bff; background-color: white;" disabled>Koror, Palau</button><br>
+			<p class="text-bottom ml-1" style="display: inline;">&nbsp;&nbsp;Current Location:</p><button type="button" class="btn btn-md btn-outline-primary ml-4" style="display: inline; opacity: 1; color: #007bff; background-color: white;" disabled>Koror, Palau</button><br>
 		</div>
 		<!-- Google map embed -->
 		<iframe class="mt-3 border-shadow" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31656.897179645108!2d134.46000271321617!3d7.3413014109308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32d50cbd2e4296b1%3A0x88d8350eba322108!2sKoror%2C+Palau!5e0!3m2!1sen!2sus!4v1558675515665!5m2!1sen!2sus"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31656.897179645108!2d134.46000271321617!3d7.3413014109308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32d50cbd2e4296b1%3A0x88d8350eba322108!2sKoror%2C+Palau!5e0!3m2!1sen!2sus!4v1558675515665!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 25%;" allowfullscreen></iframe>
 		<br>
 		<br>
 		<!-- Form -->
-		<form class="contact-form" onsubmit="return validate()" target="_top" method="post" enctype="text/plain">
-		<fieldset class="border w-100 border-shadow" style="background-color: white; margin-bottom: 8.5%;">
+		<form class="contact-form" onsubmit="return validate()" target="_top" method="post" enctype="text/plain" style="margin-bottom: 30%;">
+		<fieldset class="border w-100 border-shadow" style="background-color: white;">
 			<legend class="pl-4 ml-1">Get in touch:</legend>
-			
+
 			<label class="ml-3">Name</label><br>
-			<input type="text" class="form-control ml-3" pattern="[A-Za-z -]*" name="     Name " style="width: 250px;" maxlength="20" placeholder="Your Name" required><br>
-		
+			<input type="text" class="form-control ml-3" pattern="[A-Za-z -]*" name="     Name " maxlength="20" placeholder="Your Name" required><br>
+			
 			<label class="ml-3">Message</label><br>
-			<textarea class="form-control ml-3" id="exampleFormControlTextarea1" rows="10" cols="50" maxlength="1000" name="Message " placeholder="What do you have to say?" style="width: 500px; height: 100px;" required></textarea>
+			<textarea class="form-control contact-msg ml-3" id="exampleFormControlTextarea1" rows="10" cols="50" maxlength="1000" name="Message " placeholder="What do you have to say?" required></textarea>
 			
 			<label class="ml-3 mt-4">How'd you hear about me?</label><br>
-			<div class="input-group mb-3 ml-3" style="width: 77.5%;">
+			<div class="input-group contact-select mb-3 ml-3">
 			  <select name="     Heard " class="custom-select" id="inputGroupSelect01">
 			    <option selected value="Google">Google</option>
 			    <option value="Online">Online</option>
@@ -135,13 +135,12 @@
 			    <option value="Other">Other</option>
 			  </select>
 			</div>
-		
+	
 			<label class="ml-3 mt-4">Your Email</label><br>
-    		<input type="email" name="      Email " class="form-control ml-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="your-email@yandex.com" pattern=".+@(([\w-]+\.)+(com|edu|org|net|gov|mil|biz|info|[a-zA-Z]*))" style="width: 250px;" required>
-    		<small id="emailHelp" class="form-text text-muted ml-3">We'll never share your email with anyone else.</small>
+    		<input type="email" name="      Email " class="form-control ml-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="your-email@yandex.com" pattern=".+@(([\w-]+\.)+(com|edu|org|net|gov|mil|biz|info|[a-zA-Z]*))" required>
 
 			<label class="ml-3 mt-4">Your phone number</label><br>
-			<input type="text" name="     Phone " class="ml-3 form-control" id="phone" placeholder="3152965003" pattern="\d{10}" maxlength="10" minlength="10" style="width: 250px;" required><br>
+			<input type="text" name="     Phone " class="ml-3 form-control" id="phone" placeholder="3152965003" pattern="\d{10}" maxlength="10" minlength="10" required><br>
 			
 			<button type="submit" name="contact_form_submit" value="Send"class="ml-3 mb-3 btn btn-warning">Submit</button>
 			<button type="reset" name="contact_form_submit" value="Reset"class="ml-3 mb-3 btn btn-outline-warning px-3">Reset</button>
