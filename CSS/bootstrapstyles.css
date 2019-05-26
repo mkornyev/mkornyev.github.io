@@ -5,8 +5,29 @@
 
 } */
 
+div.accordion button {
+  float: left;
+}
+
+div.accordion a {
+  float: right;
+  margin-right: 8%;
+}
+
+div.mobile-wrap {
+  margin-left: 41%;
+}
+
+.desktop-hide {
+  display: none;
+}
+
+div.link-div-sub {
+  display: none;
+}
+
 #index_body fieldset {
-  width: 100%;
+  width: 90%;
 }
 
 form.contact-form input,
@@ -96,13 +117,15 @@ textarea.contact-msg {
   background-size: auto;
 }
 
-div.link-div a {
+div.link-div a,
+div.link-div-sub a {
   opacity: 1;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
   filter: blur(0px);
 }
-div.link-div a:hover {
+div.link-div a:hover,
+div.link-div-sub a:hover {
   opacity: .5;
   filter: blur(1px);
 }
@@ -205,21 +228,24 @@ div.fade-in {
   border: 7px solid black;
   background-image: none;
   font-weight: 940;
+
   margin-bottom: 20%;
+  margin-left: 53%;
   padding-top: 0px;
+
 }
 
 .carousel-control-next-icon:after
 {
   font-size: 20px;
   color: black;
-  margin-bottom: 10%;
+  /*margin-bottom: 20%;*/
 }
 
 .carousel-control-prev-icon:after {
   font-size: 20px;
   color: black;
-  margin-bottom: 10%;
+  /*margin-bottom: 20%;*/
 }
 
     /* Flipping effect. Credit: DavidWalsh.name */

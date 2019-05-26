@@ -1,18 +1,24 @@
 @media screen and (max-width: 480px) {
 
+	.desktop-hide {
+  		display: inline;
+	}
+
 	.mobile_nav {
 		display: inline;
+	}
+
+	ol.carousel-indicators {
+		display: none;
+	}
+
+	div.accordion button {
+	  float: left;
 	}
 
 	body {
 		font-size: 100%;
 		background-color: #faf7f3;
-	}
-
-	.footer {
-		text-align: center;
-		margin-left: 30px;
-		display: none;
 	}
 
 	.no-footer {
@@ -35,8 +41,8 @@
 		margin: 0; 
 	}
 
-	fieldset.announcement {
-		display: none; /* Remove image in smaller screens*/
+	fieldset.github-pane {
+	
 	}
 
 	.center-img {
@@ -76,16 +82,44 @@
 
 }
 
+/* Search bar clutter reduction */
 @media screen and (max-width: 823px) {
-	.search_bar,
-	div.carousel-row,
-	h5.carousel-h5,
-	div.github-card {
+	.search_bar {
 		display: none;
 	}
 
 	.footer {
-		margin-bottom: 2%;
+		/*margin-bottom: 2%;*/
+	}
+
+	div.find-me {
+		text-align: center;
+	}
+}
+
+
+@media screen and (max-width: 844px) {
+	div.accordion a {
+		  float: left;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	div.find-me,
+	div.github-card,
+	div.link-div {
+		display: none;
+	}
+
+	div.footer {
+		margin-left: -1%;
+	}
+
+	div.link-div-sub {
+		display: inline;
+		text-align: center;
+		width: 100%;
+		margin-bottom: 5%;
 	}
 }
 
