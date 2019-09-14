@@ -1,7 +1,17 @@
-// MDB Lightbox Init
-$(function () {
-	$("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
-});
+
+// $( document ).ready(function() {
+
+// 	// Modal listeners:
+// 	document.getElementById('docmodal1a').addEventListener('click', 
+// 		function () {
+// 			document.getElementById('docmodal1').style.display = 'flex';
+// 		});
+// });
+
+// // MDB Lightbox Init
+// $(function () {
+// 	$("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+// });
 
 /* 
 Deprecated: Here for later development 
