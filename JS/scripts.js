@@ -1,5 +1,24 @@
 
-// $( document ).ready(function() {
+$( document ).ready(function() {
+
+	// Explicit Mailto Action (for mobile compatibility)
+	$('.contact-form').on('submit', function(e) {
+	  console.log("Submit event")
+
+	  var messageBody = '';
+	  $.each($('.contact-form').serializeArray(), function(i, field) {
+	    messageBody += field.name + ": " + field.value + '%0D%0A';
+	  });
+
+	  console.log(messageBody)
+
+	  var hreflink = "mailto:mkornyev@gmail.com?Subject=Contact%20Form&body=" + messageBody;
+	  $('.mail').attr("href", hreflink);
+	  e.preventDefault();
+	  $('.mail')[0].click()
+	});
+
+});
 
 // 	// Modal listeners:
 // 	document.getElementById('docmodal1a').addEventListener('click', 
