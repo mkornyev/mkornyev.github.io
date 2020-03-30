@@ -46,7 +46,14 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+	<style>
+		.linkIcon {
+			border: 1px solid #212529;
+			border-radius: 50%;
+		}
+	</style>
 </head>
 
 <div class="modal" id="mymodal">
@@ -86,7 +93,7 @@
   <!-- Standard Nav --> 
   <ul class="nav justify-content-center ml-5 pl-4">
   	  <li class="nav-item">
-	    <a class="nav-link active underline_effect current_link pl-3 ml-5" href="index.html">About</a>
+	    <a class="nav-link active underline_effect current_link pl-3 ml-5" href="index.html">Home</a>
 	  </li>
 	  <li class="nav-item">
 	    <a class="nav-link underline_effect" href="projects.html">Projects</a>
@@ -155,14 +162,14 @@
 	<div id=".col">
 
 		<fieldset class="border m-4 border-shadow" style="background-color: white;">
-			<legend  class="w-auto pl-3">Tag</legend>
+			<legend  class="w-auto pl-3">About</legend>
    			<ul style="list-style: none;" class="pr-3">
 			<li class="lead">Information Systems major, musician, and student<br>exploring his passion for Web Development at CMU.</li>
 			</ul>
 		</fieldset>
 
 		<fieldset class="border m-4 border-shadow" style="background-color: white;">
-   			<legend  class="w-auto pl-3" style="text-shadow: 1.75px 1.25px 1px #fff;">Bio</legend>
+   			<legend  class="w-auto pl-3" style="text-shadow: 1.75px 1.25px 1px #fff;">Message</legend>
    			<div class="d-flex flex-nowrap">
 			<ul style="list-style: none;">
 			<!-- <li>Database expert building responsive front-end applications.</li> -->
@@ -177,11 +184,15 @@
 		</div>
 
 		<fieldset class="border m-4 border-shadow" style="background-color: white;">
-   			<legend  class="w-auto pl-3" style="text-shadow: 1.75px 1.25px 1px #fff;">Relevant Coursework</legend>
+   			<legend  class="w-auto pl-3" style="text-shadow: 1.75px 1.25px 1px #fff;">Coursework</legend>
    			<ul>
+			<li><a href="http://www.cs.cmu.edu/~./15-437/2016-fall/15-43715-637WebApplicationDevelopmentFall2016Syllabus.pdf" target="_blank" style="text-decoration: none;">17-437</a>: Web Application Development</li>
+			<li><a href="https://www.cs.cmu.edu/~charlie/courses/17-214/2019-fall/" target="_blank" style="text-decoration: none;">17-214</a>: Software Construction: Design Patterns & Concurrency</li>
+			<li><a href="https://67442.cmuis.net/" target="_blank" style="text-decoration: none;">67-442</a>: iOS Engineering</li>
+			<li><a href="https://www.coursicle.com/cmu/courses/ISH/67315/" target="_blank" style="text-decoration: none;">67-315</a>: Web Accessibility</li>
    			<li><a href="https://67272.cmuis.net/" target="_blank" style="text-decoration: none;">67-272</a>: Application Design and Development</li>
 			<li><a href="https://www.cmu.edu/information-systems/images/syllabi/67262-database-des-dev-f16.pdf" target="_blank" style="text-decoration: none;">67-262</a>: Database Design and Development</li>
-			<li><a href="https://www.cs.cmu.edu/~15122/" target="_blank" style="text-decoration: none;">15-122</a>: Imperative Computation (Data Structures)</li>
+			<li><a href="https://www.cs.cmu.edu/~15122/" target="_blank" style="text-decoration: none;">15-122</a>: Data Structures</li>
 			</ul>
 		</fieldset>
 		
@@ -189,10 +200,9 @@
 
 	<div class=".col footer pl-5 pt-3">
 		<div class="find-me border-bottom">
-		<h3>Find me</h3>
+		<h3>Contact Me</h3>
 		Max Kornyev <br/>
 		<a href="https://www.cmu.edu/information-systems/" target="_blank">Carnegie Mellon University</a><br/>
-		101 North Dithridge St<br/>
 		Pittsburgh, PA 15213<br/>
 		315.296.5003 (C)<br/>
 		<br/>
@@ -201,10 +211,10 @@
 	<div class="link-div">
 		<h3 class="pt-3" style="text-shadow: 1.75px 1.25px 1px #fff;">Links</h3>
 		<!--<div>Icons made by <a href="https://www.flaticon.com/authors/pixel-buddha" title="Pixel Buddha">Pixel Buddha</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a>-->
-		<a href="mailto:mkornyev@andrew.cmu.edu"><img src="my_images/email.png" width="32px"></a>
-		<a href="https://www.linkedin.com/in/mkornyev" target="_blank"><img src="my_images/linkedIn.png" width="32px"></a>
-		<a href="https://www.facebook.com/max.kornyev" target="_blank"><img src="my_images/facebook.png" width="32px"></a>
-		<a href="https://github.com/mkornyev" target="_blank"><img src="my_images/github.png" width="32px"></a><br>
+		<a href="mailto:mkornyev@andrew.cmu.edu"><img class="linkIcon" src="my_images/email.png" width="32px"></a>
+		<a href="https://www.linkedin.com/in/mkornyev" target="_blank"><img class="linkIcon" src="my_images/linkedIn.png" width="32px"></a>
+		<a href="https://www.facebook.com/max.kornyev" target="_blank"><img class="linkIcon" src="my_images/facebook.png" width="32px"></a>
+		<a href="https://github.com/mkornyev" target="_blank"><img class="linkIcon" src="my_images/github.png" width="32px"></a><br>
 	</div>
 
 	<!-- VUE JS Section -->
